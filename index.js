@@ -16,14 +16,15 @@ let top1;
 let left1;
 
 const moving = function () {
-
+if (top1 >= 210) {
+		clearInterval(move);
+		return;
+	}
 	top1 = div.offsetTop;
 	left1 = div.offsetLeft;
 	div.style.left = (left1 + 30) + 'px';
 	div.style.top = (top1 + 30) + 'px';
-	if (top1 >= 270) {
-		clearInterval(move);
-	}
+
 
 }
 
