@@ -1,32 +1,42 @@
 
 
-const pColor = document.querySelector('p');
-const newColour = function () {
-	pColor.style.color = 'blue';
-}
-newColour();
+// const pColor = document.querySelector('p');
+// const newColour = function () {
+// 	pColor.style.color = 'blue';
+// }
+// newColour();
 
-const div = document.createElement('div');
-div.style.width = '100px';
-div.style.height = '100px';
-div.style.border = "2px dotted black";
-pColor.insertAdjacentElement("beforebegin", div);
+// const div = document.createElement('div');
+// div.style.width = '100px';
+// div.style.height = '100px';
+// div.style.border = "2px dotted black";
+// pColor.insertAdjacentElement("beforebegin", div);
 
-let top1;
-let left1;
+// let top1;
+// let left1;
 
-const moving = function () {
-if (top1 >= 210) {
-		clearInterval(move);
-		return;
-	}
-	top1 = div.offsetTop;
-	left1 = div.offsetLeft;
-	div.style.left = (left1 + 30) + 'px';
-	div.style.top = (top1 + 30) + 'px';
+// const moving = function () {
+// if (top1 >= 210) {
+// 		clearInterval(move);
+// 		return;
+// 	}
+// 	top1 = div.offsetTop;
+// 	left1 = div.offsetLeft;
+// 	div.style.left = (left1 + 30) + 'px';
+// 	div.style.top = (top1 + 30) + 'px';
 
 
-}
+// }
 
-const move = setInterval(moving, 1000);
+// const move = setInterval(moving, 1000);
+
+// let room = {
+//   number: 23
+// };
+
+// let meetup = {
+//   title: "Совещание",
+//   occupiedBy: [{name: "Иванов"}, {name: "Петров"}],
+//   place: room
+// };
 
